@@ -13,9 +13,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
         ApplicationConfiguration.class,
         AppDispatcherServletConfiguration.class
 })
-@ComponentScan(basePackages = {"com.example.demo"})
 @EnableTransactionManagement
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.example.demo"})
 public class DemoApplication {
 
     public static void main(String[] args) {

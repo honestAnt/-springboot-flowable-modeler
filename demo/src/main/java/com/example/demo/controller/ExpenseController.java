@@ -147,6 +147,7 @@ public class ExpenseController {
         byte[] buf = new byte[1024];
         int legth = 0;
         try {
+            httpServletResponse.setContentType("image/apng");
             out = httpServletResponse.getOutputStream();
             while ((legth = in.read(buf)) != -1) {
                 out.write(buf, 0, legth);
